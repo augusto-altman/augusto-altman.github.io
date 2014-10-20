@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Bootstrap</title>
+    <title>From RequireJS modules to standalone javascript</title>
     <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="../../../../common/css/social.css"/>
     <style>
       body {
         background-color: #f6f6f6;
@@ -30,14 +31,25 @@
     
   </head>
 <body>
-
+<div>
+<div id="share-buttons">
+ 
+<!-- Facebook -->
+<a href="https://www.facebook.com/sharer/sharer.php?u=http://augusto-altman.github.io/javascript/building/modularization/compilationWithRquireJS/basicMechanism/eng/buildTechnique.html" target="_blank"><img src="../../../../common/imgs/facebook.png" alt="Facebook" /></a>
+ 
+<!-- Twitter -->
+<a href="https://twitter.com/home?status=http://augusto-altman.github.io/javascript/building/modularization/compilationWithRquireJS/basicMechanism/eng/buildTechnique.html" target="_blank"><img src="../../../../common/imgs/twitter.png" alt="Twitter" /></a>
+ 
+<!-- Google+ -->
+<a href="https://plus.google.com/share?url=http://augusto-altman.github.io/javascript/building/modularization/compilationWithRquireJS/basicMechanism/eng/buildTechnique.html" target="_blank"><img src="../../../../common/imgs/google.png" alt="Google" /></a>
+</div></div>
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="span3">
-        <ul class="nav nav-list"><li><a href="#automatic_generation_of_standalone_vendor_free_javascript_files_from_requirejs_modules">Automatic generation of standalone vendor-free javascript files from RequireJS modules</a></li><li><a href="#contact_us">Contact us</a></li></ul>
+        <ul class="nav nav-list"><li><a href="#from_requirejs_modules_to_standalone_javascript">From RequireJS modules to standalone javascript</a></li><li><a href="#how_this_works">How this works</a></li><li><a href="#contact_us">Contact us</a></li></ul>
       </div>
       <div class="span9 main">
-        <a name="automatic_generation_of_standalone_vendor_free_javascript_files_from_requirejs_modules"></a><h1>Automatic generation of standalone vendor-free javascript files from RequireJS modules<a class="anchorlink" href="#automatic_generation_of_standalone_vendor_free_javascript_files_from_requirejs_modules"></a></h1>
+        <a name="from_requirejs_modules_to_standalone_javascript"></a><h1>From RequireJS modules to standalone javascript<a class="anchorlink" href="#from_requirejs_modules_to_standalone_javascript"></a></h1>
 <p>Over the years it has become clear for the javascript community the need of modularization for their projects. This is because dividing any project in little chunks of independant code has advatajes that becomes critical as the project grows:</p>
 <ul class="list">
 <li><strong>Team-ready project</strong> Each developer on a team can be assigned a set of modules to develop and can work in parallel with minimal conflicts. Additionally, everyone can write in their own preferred style within the context of the module without preferences getting in the way of progress.</li>
@@ -51,6 +63,7 @@
 </ul>
 <p>Today, one of the most common ways to get modulization is through the AMD specification which is used by asynchronous libraries like RequireJS. For browser applications, it have a problem: They end up depending on external vendor libraries (e.g. RequireJS). There are cases where we may need to generate a single standalone javascript file which does not need RequireJS to work, but we still want to develop it with modules.</p>
 <p>In this post I will show a very cool technique that is being used by some of the most popular javscript libraries like Modernizr and JQuery, in which the code is completely developed in RequireJS modules and then those modules are compiled into a single vendor-free javascript file.</p>
+<a name="how_this_works"></a><h2>How this works<a class="anchorlink" href="#how_this_works"></a></h2>
 <a name="contact_us"></a><h2>Contact us<a class="anchorlink" href="#contact_us"></a></h2>
 <p><strong>e-mail</strong>: augusto.altman@gmail.com, matiascarranza@gmail.com</p>
 

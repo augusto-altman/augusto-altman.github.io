@@ -1,4 +1,4 @@
-Automatic generation of standalone vendor-free javascript files from RequireJS modules
+From RequireJS modules to standalone javascript
 =============
 
 Over the years it has become clear for the javascript community the need of modularization for their projects. This is because dividing any project in little chunks of independant code has advatajes that becomes critical as the project grows:
